@@ -1,0 +1,285 @@
+@font-face {
+    font-family: 'RSU-regular-th';
+    src: url('../fonts/rsufont/RSU-regular-th.eot');
+    src: url('../fonts/rsufont/RSU-regular-th.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/rsufont/RSU-regular-th.woff') format('woff'),
+    url('../fonts/rsufont/RSU-regular-th.ttf') format('truetype'),
+    url('../fonts/rsufont/RSU-regular-th.svg#RSU-regular-th') format('svg');
+    font-weight: normal;font-style: normal;
+}
+
+body{
+    background-color: #F4F5F5;
+    font-family: RSU-regular-th, sans-serif;
+}
+
+.form-signin
+{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin .checkbox
+{
+    margin-bottom: 10px;
+}
+.form-signin .checkbox
+{
+    font-weight: normal;
+}
+.form-signin .form-control
+{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus
+{
+    z-index: 2;
+}
+.form-signin input[type="text"]
+{
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"]
+{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.account-wall
+{
+    margin-top: 20px;
+    padding: 40px 0px 20px 0px;
+    background-color: #f7f7f7;
+}
+.login-title
+{
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+}
+.profile-img
+{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.need-help
+{
+    margin-top: 10px;
+}
+.new-account
+{
+    display: block;
+    margin-top: 10px;
+}
+
+#main-content{
+    padding-left:50px;
+}
+
+/* Modify Modal */
+.modal{
+    top: 30%;
+}
+
+.modal-content{
+    background-color: #e74c3c;
+    border: 0px;
+
+}
+
+.modal-body p{
+    text-align: center;
+    color:white;
+    font-size: 2em;
+    line-height: normal;
+    margin: 30px;
+}
+
+.modal-backdrop {
+  background-color: white;
+}
+.modal-backdrop.in {
+  opacity: 0.45;
+  filter: alpha(opacity=55);
+}
+
+/*
+.modal.fade {
+  -webkit-transition: opacity .3s linear, top .3s ease-out;
+  -moz-transition: opacity .3s linear, top .3s ease-out;
+  -ms-transition: opacity .3s linear, top .3s ease-out;
+  -o-transition: opacity .3s linear, top .3s ease-out;
+  transition: opacity .3s linear, top .3s ease-out;
+}
+*/
+
+.modal.fade {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}​
+
+body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
+    margin-right: 0px;
+}
+
+/*nav bar*/
+.navbar-twitch {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 50px;
+    height: 100%;
+    border-radius: 0px;
+    border: 0px;
+    z-index: 1030;
+}
+.navbar-twitch.open {
+    width: 240px;
+}
+.navbar-twitch > .container {
+    padding: 0px;
+    width: 100%;
+}
+.navbar-twitch .navbar-header,
+.navbar-twitch .navbar-brand {
+    float: none;
+    display: block;
+    width: 100%;
+    margin: 0px;
+}
+.navbar-twitch .navbar-brand {
+    height: 50px;   
+}
+.navbar-twitch > .container .navbar-brand {
+    padding: 0px;
+    margin: 0px;
+}
+.navbar-twitch > .container .navbar-brand > .small-nav {
+    display: block;
+}
+.navbar-twitch > .container .navbar-brand > .small-nav > span.logo, 
+.navbar-twitch.open > .container .navbar-brand > .full-nav {
+    display: block;
+    font-weight: bold;
+    padding: 15px 2px 15px 3px;
+    font-size: 18pt;
+}
+.navbar-twitch.open > .container .navbar-brand {
+    width: 100%;
+    padding: 15px 15px 60px;
+    text-align: center;
+}
+.navbar-twitch.navbar-inverse > .container .navbar-brand > .small-nav > span.logo {
+    /*color: rgb(255, 255, 255);*/
+}
+.navbar-twitch .navbar-nav > li {
+    float: none;
+}
+.navbar-twitch > .container .full-nav {
+    display: none;
+}
+.navbar-twitch.open > .container .full-nav {
+    display: block;
+}
+.navbar-twitch.open > .container .small-nav {
+    display: none;
+}
+.navbar-twitch .navbar-collapse {
+    padding: 0px;
+}
+.navbar-twitch .navbar-nav {
+    float: none;
+    margin: 0px;
+}
+.navbar-twitch .navbar-nav > li > a {
+    padding: 0px;
+}
+.navbar-twitch .navbar-nav > li > a > span {
+    display: block;
+    font-size: 16pt;
+    padding: 13px 15px 13px 12px;
+}
+.navbar-twitch .tooltip,
+.navbar-twitch .tooltip .tooltip-inner {
+    max-width: auto;
+    white-space:nowrap;
+}
+.navbar-twitch-toggle {
+    position: fixed;
+    top: 5px;
+    left: 55px;
+}
+.navbar-twitch ~ .navbar-twitch-toggle > .nav-open {
+    display: inline-block;
+}
+.navbar-twitch ~ .navbar-twitch-toggle > .nav-close {
+    display: none;
+}
+.navbar-twitch.open ~ .navbar-twitch-toggle {
+    left: 245px;
+}
+.navbar-twitch.open ~ .navbar-twitch-toggle > .nav-open {
+    display: none;
+}
+.navbar-twitch.open ~ .navbar-twitch-toggle > .nav-close {
+    display: inline-block;
+}
+
+
+.btn-purple,
+.btn-purple:hover,
+.btn-purple:focus,
+.btn-purple:Active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(86, 61, 124);
+    border-color: rgb(111, 84, 153);
+}
+.btn-purple:hover,
+.btn-purple:focus,
+.btn-purple:Active {
+    background-color: rgb(111, 84, 153);
+    border-color: rgb(86, 61, 124);   
+}
+
+.navbar {
+    background-image: none !important;
+}
+.navbar-purple {
+    background-color: rgb(86, 61, 124);
+    border-color: rgb(111, 84, 153);
+}
+.navbar-purple .navbar-brand, 
+.navbar-purple .navbar-nav > li > a, 
+.navbar-purple .navbar-brand:hover, 
+.navbar-purple .navbar-nav > li > a:hover, 
+.navbar-purple .navbar-brand:focus, 
+.navbar-purple .navbar-nav > li > a:focus {
+    color: rgb(205, 191, 227);;
+}
+.navbar-purple .navbar-brand:hover, 
+.navbar-purple .navbar-nav > li > a:hover, 
+.navbar-purple .navbar-brand:focus, 
+.navbar-purple .navbar-nav > li > a:focus,
+.navbar-purple .navbar-nav > .active > a, 
+.navbar-purple .navbar-nav > .active > a:hover, 
+.navbar-purple .navbar-nav > .active > a:focus {
+    background-color: rgb(111, 84, 153);
+    color: rgb(255, 255, 255);
+}
