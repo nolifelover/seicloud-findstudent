@@ -95,12 +95,13 @@ body{
     top: 30%;
 }
 
+/*
 .modal-content{
     background-color: #e74c3c;
     border: 0px;
 
 }
-
+*/
 .modal-body p{
     text-align: center;
     color:white;
@@ -110,9 +111,44 @@ body{
 }
 
 .modal-backdrop {
-  background-color: white;
+  background-color: #000;
 }
 .modal-backdrop.in {
+  opacity: 0.25;
+  filter: alpha(opacity=25);
+}
+
+#configModal.modal{
+    top: 30%;
+}
+
+#configModal.modal-content{
+    background-color: #fff;
+    border: 0px;
+}
+
+#configModal.modal-content{
+    background-color: #fff;
+    border: 0px;
+
+}
+
+.modal-header{
+    background: #428bca;
+}
+
+#configModal.modal-body p{
+    text-align: center;
+    color:white;
+    font-size: 2em;
+    line-height: normal;
+    margin: 30px;
+}
+
+#configModal.modal-backdrop {
+  background-color: white;
+}
+#configModal.modal-backdrop.in {
   opacity: 0.45;
   filter: alpha(opacity=55);
 }

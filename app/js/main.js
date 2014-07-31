@@ -8,13 +8,35 @@ var config = require('config');
 var logger = require('logger');
 var fs = require('fs')
 var sys = require('sys');
+var Reader = require('reader');
 var token = "";
+
+var reader = Reader.init("/dev/ttyUSB0", "test");
+reader.on(Reader.Event.Connected,function(){
+	logger.info("-- success start reader");		  			
+}).on(Reader.Event.Error,function(){
+	logger.info("-- error to connect "+port);
+	//self.changeStatus("reader", false);
+}).on(Reader.Event.Data, function(result){
+	logger.debug("-- received card "+result.tag)
+	logger.verb(sys.inspect(result));
+	//exec("xset dpms force on");
+	//if(self._state == 10){
+	//	self.stamp(result.tag);
+	//}else{
+	//	logger.debug("-- lock stamp");
+	//}				
+});
 
 $(document).ready(function(){	
 	//displayModal("ระบบกำลังทำงาน กรุณารอสักครู่","#f73d40");
+	//localStorage.setItem("config.api", "Smith");
 	$("#login").hide();
 	$("#login").fadeIn();
-
+	$("#configForm").submit(function(e){
+		e.preventDefault();
+		$("#configModal").modal('hide');
+	});
 	$('#form-signin').submit(function(e){
 		e.preventDefault();
 		var b = $("#loggin-button")[0];
