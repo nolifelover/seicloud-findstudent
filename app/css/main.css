@@ -111,11 +111,11 @@ body{
 }
 
 .modal-backdrop {
-  background-color: #000;
+  background-color: #fff;
 }
 .modal-backdrop.in {
-  opacity: 0.25;
-  filter: alpha(opacity=25);
+  opacity: 0.45;
+  filter: alpha(opacity=45);
 }
 
 #configModal.modal{
@@ -318,4 +318,14 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 .navbar-purple .navbar-nav > .active > a:focus {
     background-color: rgb(111, 84, 153);
     color: rgb(255, 255, 255);
+}
+
+.profile-image-big{
+    display:inline-block;
+    border-radius: 200px 200px 200px 200px;
+    display: inline-block;
+    height: 200px;
+    overflow: hidden;
+    width: 200px;   
+    border: solid 1px #000;
 }

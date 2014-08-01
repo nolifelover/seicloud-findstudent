@@ -1,0 +1,27 @@
+<div class="row">
+	<div class="col-md-4">
+		<div class="row text-center">
+			<div class="profile-image-big">				
+					<img src="<%= imageUrl %>" class="captify" alt="คลิ๊กเพื่ออัพโหลดรูป" width="200" height="250">
+			</div>
+		</div>
+	</div>
+	<div class="col-md-8">
+		<p>
+			<span class="info_bold">ชื่อ-นามสกุล</span>
+			<%= user.fullname%>
+		</p>
+		<p>
+			<span class="info_bold">รหัสนักเรียน</span>
+			<%= user.studentCode%>
+		</p>
+		<p>
+			<span class="info_bold">รหัสบัตรประชาชน</span>
+			<%= user.personalCode%>
+		</p>
+		<p>
+			<span class="info_bold">ข้อมูลที่อยู่</span>
+			<%= user.address %>
+		</p>
+	</div>
+</div>
